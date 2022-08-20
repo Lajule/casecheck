@@ -1,0 +1,29 @@
+#!/bin/bash
+# -*- mode: sh; tab-width: 2; -*-
+
+set -e
+
+declare -a options
+
+while [[ "$1" = -* ]]; do
+	options+=("$1")
+	shift
+done
+
+if [[ -f './Wordlist' ]]; then
+	wordlist='./Wordlist'
+else
+	wordlist="${HOME}/.Wordlist"
+fi
+
+readarray -t words <"${wordlist}"
+
+for word in "${words[@]}"; do
+	options+=("-e s/\(\(^\|\s\)\W\?\)${word}\(\W\?\(\s\|$\)\)/\1${word}\3/gi")
+done
+
+if (( $# == 0 )); then
+	sed "${options[@]}"
+else
+	sed "${options[@]}" "$@"
+fi
