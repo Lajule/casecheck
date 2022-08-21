@@ -1,29 +1,36 @@
 #!/bin/bash
 # -*- mode: sh; tab-width: 2; -*-
 
-set -e
+casecheck() {
+	declare -a options
 
-declare -a options
+	while [[ "$1" = -* ]]; do
+		options+=("$1")
+		shift
+	done
 
-while [[ "$1" = -* ]]; do
-	options+=("$1")
-	shift
-done
+	if [[ -r 'Wordlist' ]]; then
+		wordlist='Wordlist'
+	elif [[ -r "${HOME}/.Wordlist" ]]; then
+		wordlist="${HOME}/.Wordlist"
+	else
+		echo 'No Wordlist found' >&2
+		return 1
+	fi
 
-if [[ -f './Wordlist' ]]; then
-	wordlist='./Wordlist'
-else
-	wordlist="${HOME}/.Wordlist"
-fi
+	if ! readarray -t words >&/dev/null <"${wordlist}"; then
+		echo 'Can not parse Wordlist' >&2
+		return 1
+	fi
 
-readarray -t words <"${wordlist}"
+	for word in "${words[@]}"; do
+		options+=("-e s/\(\(^\|\s\)\W\?\)${word}\(\W\?\(\s\|$\)\)/\1${word}\3/gi")
+	done
 
-for word in "${words[@]}"; do
-	options+=("-e s/\(\(^\|\s\)\W\?\)${word}\(\W\?\(\s\|$\)\)/\1${word}\3/gi")
-done
+	if ! sed "${options[@]}" "$@" 2>/dev/null; then
+		echo 'Can not edit input' >&2
+		return 1
+	fi
+}
 
-if (( $# == 0 )); then
-	sed "${options[@]}"
-else
-	sed "${options[@]}" "$@"
-fi
+casecheck "$@"
