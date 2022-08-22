@@ -14,8 +14,10 @@ I love Emacs and GitHub!
 To fix the case:
 
 ```sh
-echo 'I love emacs and GITHUB!' >test
-sed -i -f casecheck test
+echo 'I love emacs and GITHUB!' >out
+sed -i -f casecheck out
+cat out
+I love Emacs and GitHub!
 ```
 
 [1]: https://github.com/antfu/case-police
