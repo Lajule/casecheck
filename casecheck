@@ -428,7 +428,6 @@ s/\(\(^\|\s\)\W\?\)Wasm\(\W\?\(\s\|$\)\)/\1Wasm\3/gi
 s/\(\(^\|\s\)\W\?\)watchOS\(\W\?\(\s\|$\)\)/\1watchOS\3/gi
 s/\(\(^\|\s\)\W\?\)WebAssembly\(\W\?\(\s\|$\)\)/\1WebAssembly\3/gi
 s/\(\(^\|\s\)\W\?\)WebAR\(\W\?\(\s\|$\)\)/\1WebAR\3/gi
-s/\(\(^\|\s\)\W\?\)WebAssembly\(\W\?\(\s\|$\)\)/\1WebAssembly\3/gi
 s/\(\(^\|\s\)\W\?\)WebGL\(\W\?\(\s\|$\)\)/\1WebGL\3/gi
 s/\(\(^\|\s\)\W\?\)WebGPU\(\W\?\(\s\|$\)\)/\1WebGPU\3/gi
 s/\(\(^\|\s\)\W\?\)WebKit\(\W\?\(\s\|$\)\)/\1WebKit\3/gi
