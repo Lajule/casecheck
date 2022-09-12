@@ -7,14 +7,13 @@ DESTDIR ?= /usr/local/bin/
 .PHONY: all
 all: $(PROGRAM)
 
-
 .PHONY: clean
 clean:
 	$(RM) $(PROGRAM)
 
 .PHONY: check
 check: $(PROGRAM)
-	[[ "$$(echo 'I love emacs and GITHUB!' | ./$(PROGRAM))" == "I love Emacs and GitHub!" ]]
+	test "$$(echo 'I love emacs and GITHUB!' | ./$(PROGRAM))" = "I love Emacs and GitHub!"
 
 .PHONY: install
 install: $(PROGRAM)
