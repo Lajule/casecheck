@@ -1,4 +1,5 @@
 PROGRAM = casecheck
+VERSION = 0.0.1
 
 INPUT = wordlist.txt
 
@@ -22,7 +23,8 @@ install: $(PROGRAM)
 $(PROGRAM):
 	{ \
 	  printf "#!/bin/sed -f\n"; \
+	  printf "# %s %s\n" "$(PROGRAM)" "$(VERSION)"; \
 	  while read -r line; do \
-	    printf "s/\(\(^\|\s\)\W\\\?\)%s\(\W\\\?\(\s\|$$\)\)/\\\1%s\\\3/gi\n" "$${line}" "$${line}"; \
+	    printf "s/\\\b%s\\\b\(\s\|$$\)/%s\\\1/gi\n" "$${line}" "$${line}"; \
 	  done <$(INPUT); \
 	} >$@ && chmod +x $@
