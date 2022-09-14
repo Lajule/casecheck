@@ -17,7 +17,7 @@ clean:
 install: $(PROGRAM)
 	install -t $(DESTDIR) $(PROGRAM)
 
-$(PROGRAM):
+$(PROGRAM): $(INPUT)
 	{ \
 	  printf "#!$(SED) -f\n"; \
 	  printf "#%s %s\n" "$(PROGRAM)" "$(VERSION)"; \
