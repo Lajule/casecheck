@@ -16,14 +16,14 @@ s/\bAlphaGo\b/AlphaGo/gi
 s/\bAMap\b/AMap/gi
 s/\bAMD\b/AMD/gi
 s/\bAngularJS\b/AngularJS/gi
-s/\bAnt Design Vue\b/Ant Design Vue/gi
-s/\bAntDesignVue\b/AntDesignVue/gi
+s/\bAntD\b/AntD/gi
 s/\bAnt Design\b/Ant Design/gi
 s/\bAntDesign\b/AntDesign/gi
-s/\bAntD\b/AntD/gi
+s/\bAnt Design Vue\b/Ant Design Vue/gi
+s/\bAntDesignVue\b/AntDesignVue/gi
 s/\bAntV\b/AntV/gi
-s/\bApifox\b/Apifox/gi
 s/\bAPI\b/API/gi
+s/\bApifox\b/Apifox/gi
 s/\bApple Pay\b/Apple Pay/gi
 s/\bAppleScript\b/AppleScript/gi
 s/\bAppleTalk\b/AppleTalk/gi
@@ -50,8 +50,8 @@ s/\bCityJSON\b/CityJSON/gi
 s/\bCJS\b/CJS/gi
 s/\bCKEditor\b/CKEditor/gi
 s/\bClashX\b/ClashX/gi
-s/\bClickHouse\b/ClickHouse/gi
 s/\bCLI\b/CLI/gi
+s/\bClickHouse\b/ClickHouse/gi
 s/\bCMake\b/CMake/gi
 s/\bCNCF\b/CNCF/gi
 s/\bCockroachDB\b/CockroachDB/gi
@@ -109,8 +109,8 @@ s/\bFFmpeg\b/FFmpeg/gi
 s/\bFileZilla\b/FileZilla/gi
 s/\bFirefox\b/Firefox/gi
 s/\bFreeMarker\b/FreeMarker/gi
-s/\bFTPS\b/FTPS/gi
 s/\bFTP\b/FTP/gi
+s/\bFTPS\b/FTPS/gi
 s/\bGCC\b/GCC/gi
 s/\bGDNative\b/GDNative/gi
 s/\bGDScript\b/GDScript/gi
@@ -130,16 +130,16 @@ s/\bGitpod\b/Gitpod/gi
 s/\bGLSL\b/GLSL/gi
 s/\bglTF\b/glTF/gi
 s/\bGNOME\b/GNOME/gi
-s/\bGnuPG\b/GnuPG/gi
 s/\bGNU\b/GNU/gi
+s/\bGnuPG\b/GnuPG/gi
 s/\bGoLand\b/GoLand/gi
 s/\bGoogle Pay\b/Google Pay/gi
 s/\bGORM\b/GORM/gi
 s/\bGPL\b/GPL/gi
 s/\bGPS\b/GPS/gi
 s/\bGraphQL\b/GraphQL/gi
-s/\bGreenSock\b/GreenSock/gi
 s/\bGRE\b/GRE/gi
+s/\bGreenSock\b/GreenSock/gi
 s/\bgRPC\b/gRPC/gi
 s/\bHacker News\b/Hacker News/gi
 s/\bHacPai\b/HacPai/gi
@@ -149,8 +149,8 @@ s/\bHDMI\b/HDMI/gi
 s/\bHomeKit\b/HomeKit/gi
 s/\bHomePod\b/HomePod/gi
 s/\bHTML\b/HTML/gi
-s/\bHTTPS\b/HTTPS/gi
 s/\bHTTP\b/HTTP/gi
+s/\bHTTPS\b/HTTPS/gi
 s/\bIaaS\b/IaaS/gi
 s/\bIBM\b/IBM/gi
 s/\biBook\b/iBook/gi
@@ -163,12 +163,12 @@ s/\biMessage\b/iMessage/gi
 s/\biMovie\b/iMovie/gi
 s/\bimToken\b/imToken/gi
 s/\bInfluxDB\b/InfluxDB/gi
-s/\bIntelliJ IDEA\b/IntelliJ IDEA/gi
 s/\bIntelliJ\b/IntelliJ/gi
+s/\bIntelliJ IDEA\b/IntelliJ IDEA/gi
 s/\bIoC\b/IoC/gi
 s/\biOS\b/iOS/gi
-s/\biPadOS\b/iPadOS/gi
 s/\biPad\b/iPad/gi
+s/\biPadOS\b/iPadOS/gi
 s/\bIPC\b/IPC/gi
 s/\bIPFS\b/IPFS/gi
 s/\biPhone\b/iPhone/gi
@@ -192,8 +192,8 @@ s/\bJRE\b/JRE/gi
 s/\bjsDelivr\b/jsDelivr/gi
 s/\bJSDoc\b/JSDoc/gi
 s/\bJSF\b/JSF/gi
-s/\bJSONP\b/JSONP/gi
 s/\bJSON\b/JSON/gi
+s/\bJSONP\b/JSONP/gi
 s/\bJSP\b/JSP/gi
 s/\bJupyterLab\b/JupyterLab/gi
 s/\bJWT\b/JWT/gi
@@ -213,13 +213,13 @@ s/\bLinkedIn\b/LinkedIn/gi
 s/\bLLVM\b/LLVM/gi
 s/\bLRU\b/LRU/gi
 s/\bLTS\b/LTS/gi
+s/\bMacBook\b/MacBook/gi
 s/\bMacBook Air\b/MacBook Air/gi
 s/\bMacBook Pro\b/MacBook Pro/gi
-s/\bMacBook\b/MacBook/gi
 s/\bmacOS\b/macOS/gi
 s/\bMariaDB\b/MariaDB/gi
-s/\bMarkdownLint\b/MarkdownLint/gi
 s/\bMarkdown\b/Markdown/gi
+s/\bMarkdownLint\b/MarkdownLint/gi
 s/\bMATHIEU\b/MATHIEU/gi
 s/\bMathJax\b/MathJax/gi
 s/\bMathML\b/MathML/gi
@@ -272,8 +272,8 @@ s/\bOpenCV\b/OpenCV/gi
 s/\bOpenFaaS\b/OpenFaaS/gi
 s/\bOpenFlow\b/OpenFlow/gi
 s/\bopenGauss\b/openGauss/gi
-s/\bOpenGL ES\b/OpenGL ES/gi
 s/\bOpenGL\b/OpenGL/gi
+s/\bOpenGL ES\b/OpenGL ES/gi
 s/\bOpenJDK\b/OpenJDK/gi
 s/\bOpenLayers\b/OpenLayers/gi
 s/\bOpenPGP\b/OpenPGP/gi
@@ -294,8 +294,8 @@ s/\bPayPal\b/PayPal/gi
 s/\bPDF\b/PDF/gi
 s/\bPDO\b/PDO/gi
 s/\bPhotoshop\b/Photoshop/gi
-s/\bPhpStorm\b/PhpStorm/gi
 s/\bPHP\b/PHP/gi
+s/\bPhpStorm\b/PhpStorm/gi
 s/\bPi-hole\b/Pi-hole/gi
 s/\bPOSIX\b/POSIX/gi
 s/\bPostCSS\b/PostCSS/gi
@@ -325,9 +325,9 @@ s/\bRethinkDB\b/RethinkDB/gi
 s/\bRFC\b/RFC/gi
 s/\bROM\b/ROM/gi
 s/\bRPC\b/RPC/gi
+s/\bRSS\b/RSS/gi
 s/\bRSS3\b/RSS3/gi
 s/\bRSSHub\b/RSSHub/gi
-s/\bRSS\b/RSS/gi
 s/\bRxDB\b/RxDB/gi
 s/\bRxJS\b/RxJS/gi
 s/\bSaaS\b/SaaS/gi
@@ -346,9 +346,9 @@ s/\bSPIR-V\b/SPIR-V/gi
 s/\bSpringBoot\b/SpringBoot/gi
 s/\bSpringCloud\b/SpringCloud/gi
 s/\bSpringMVC\b/SpringMVC/gi
+s/\bSQL\b/SQL/gi
 s/\bSQLite\b/SQLite/gi
 s/\bSQLServer\b/SQLServer/gi
-s/\bSQL\b/SQL/gi
 s/\bSRE\b/SRE/gi
 s/\bSSG\b/SSG/gi
 s/\bSSH\b/SSH/gi
@@ -426,8 +426,8 @@ s/\bWebSocket\b/WebSocket/gi
 s/\bWebStorm\b/WebStorm/gi
 s/\bWebVR\b/WebVR/gi
 s/\bWebXR\b/WebXR/gi
-s/\bWeChat Pay\b/WeChat Pay/gi
 s/\bWeChat\b/WeChat/gi
+s/\bWeChat Pay\b/WeChat Pay/gi
 s/\bWGSL\b/WGSL/gi
 s/\bWhatsApp\b/WhatsApp/gi
 s/\bWi-Fi\b/Wi-Fi/gi

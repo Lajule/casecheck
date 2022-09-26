@@ -1,27 +1,28 @@
-PROGRAM = casecheck
-VERSION = 0.0.1
-INPUT = wordlist.txt
+SHELL := /bin/sh
 
-SED ?= /bin/sed
-
-DESTDIR ?= /usr/local/bin/
+program := casecheck
+version := 0.0.1
+input   := wordlist.txt
 
 .PHONY: all
-all: $(PROGRAM)
+all: $(program)
 
 .PHONY: clean
 clean:
-	$(RM) $(PROGRAM)
+	$(RM) $(program)
 
 .PHONY: install
-install: $(PROGRAM)
-	install -t $(DESTDIR) $(PROGRAM)
+install: $(program)
+	install -t $(DESTDIR) $(program)
 
-$(PROGRAM): $(INPUT)
+SED ?= /bin/sed
+EXPR ?= s/\\\b%s\\\b/%s/gi
+DESTDIR ?= /usr/local/bin/
+$(program): $(input)
 	{ \
 	  printf "#!$(SED) -f\n"; \
-	  printf "#%s %s\n" "$(PROGRAM)" "$(VERSION)"; \
+	  printf "#%s %s\n" "$(program)" "$(version)"; \
 	  while read -r line; do \
-	    printf "s/\\\b%s\\\b/%s/gi\n" "$${line}" "$${line}"; \
-	  done <$(INPUT); \
+	    printf "$(EXPR)\n" "$${line}" "$${line}"; \
+	  done < <(sort -u $(input)); \
 	} >$@ && chmod +x $@

@@ -14,14 +14,14 @@ AlphaGo
 AMap
 AMD
 AngularJS
-Ant Design Vue
-AntDesignVue
+AntD
 Ant Design
 AntDesign
-AntD
+Ant Design Vue
+AntDesignVue
 AntV
-Apifox
 API
+Apifox
 Apple Pay
 AppleScript
 AppleTalk
@@ -48,8 +48,8 @@ CityJSON
 CJS
 CKEditor
 ClashX
-ClickHouse
 CLI
+ClickHouse
 CMake
 CNCF
 CockroachDB
@@ -107,8 +107,8 @@ FFmpeg
 FileZilla
 Firefox
 FreeMarker
-FTPS
 FTP
+FTPS
 GCC
 GDNative
 GDScript
@@ -128,16 +128,16 @@ Gitpod
 GLSL
 glTF
 GNOME
-GnuPG
 GNU
+GnuPG
 GoLand
 Google Pay
 GORM
 GPL
 GPS
 GraphQL
-GreenSock
 GRE
+GreenSock
 gRPC
 Hacker News
 HacPai
@@ -147,8 +147,8 @@ HDMI
 HomeKit
 HomePod
 HTML
-HTTPS
 HTTP
+HTTPS
 IaaS
 IBM
 iBook
@@ -161,12 +161,12 @@ iMessage
 iMovie
 imToken
 InfluxDB
-IntelliJ IDEA
 IntelliJ
+IntelliJ IDEA
 IoC
 iOS
-iPadOS
 iPad
+iPadOS
 IPC
 IPFS
 iPhone
@@ -190,8 +190,8 @@ JRE
 jsDelivr
 JSDoc
 JSF
-JSONP
 JSON
+JSONP
 JSP
 JupyterLab
 JWT
@@ -211,13 +211,13 @@ LinkedIn
 LLVM
 LRU
 LTS
+MacBook
 MacBook Air
 MacBook Pro
-MacBook
 macOS
 MariaDB
-MarkdownLint
 Markdown
+MarkdownLint
 MATHIEU
 MathJax
 MathML
@@ -270,8 +270,8 @@ OpenCV
 OpenFaaS
 OpenFlow
 openGauss
-OpenGL ES
 OpenGL
+OpenGL ES
 OpenJDK
 OpenLayers
 OpenPGP
@@ -292,8 +292,8 @@ PayPal
 PDF
 PDO
 Photoshop
-PhpStorm
 PHP
+PhpStorm
 Pi-hole
 POSIX
 PostCSS
@@ -323,9 +323,9 @@ RethinkDB
 RFC
 ROM
 RPC
+RSS
 RSS3
 RSSHub
-RSS
 RxDB
 RxJS
 SaaS
@@ -344,9 +344,9 @@ SPIR-V
 SpringBoot
 SpringCloud
 SpringMVC
+SQL
 SQLite
 SQLServer
-SQL
 SRE
 SSG
 SSH
@@ -424,8 +424,8 @@ WebSocket
 WebStorm
 WebVR
 WebXR
-WeChat Pay
 WeChat
+WeChat Pay
 WGSL
 WhatsApp
 Wi-Fi
