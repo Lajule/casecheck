@@ -11,13 +11,13 @@ all: $(program)
 clean:
 	$(RM) $(program)
 
+DESTDIR ?= /usr/local/bin/
 .PHONY: install
 install: $(program)
 	install -t $(DESTDIR) $(program)
 
 SED ?= /bin/sed
 EXPR ?= s/\\\b%s\\\b/%s/gi
-DESTDIR ?= /usr/local/bin/
 $(program): $(input)
 	{ \
 	  printf "#!$(SED) -f\n"; \
